@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientists and Their Inventions</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e3f2fd, #f1f8e9);
+            color: #444;
+        }
+        header {
+            
+            color: #0f0f0f;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Card Styles */
+        .card {
+            background: #f3f1f1;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            flex: 1 1 calc(25% - 20px);
+            max-width: calc(25% - 20px);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+           
+        }
+        .card-content p {
+            margin: 0 0 10px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .card-content a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #0288d1;
+            font-weight: bold;
+            border-bottom: 2px solid ;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .card-content a:hover {
+            color: #0f0f0f;
+            border-color: #0c0c0c;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .card {
+                flex: 1 1 calc(33.333% - 20px);
+                max-width: calc(33.333% - 20px);
+            }
+        }
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scientists and Their Inventions</h1>
+    </header>
+    <div class="container">
+        <!-- Scientists Cards -->
+        <div class="card">
+            <img src="invention image/albert.jpg" alt="Albert Einstein">
+            <div class="card-content">
+                <h2>Albert Einstein</h2>
+                <p>Developed the theory of relativity and advanced modern physics.</p>
+                <a href="https://en.wikipedia.org/wiki/Albert_Einstein">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/marie.jpg" alt="Marie Curie">
+            <div class="card-content">
+                <h2>Marie Curie</h2>
+                <p>Discovered radium and polonium, and pioneered research on radioactivity.</p>
+                <a href="https://en.wikipedia.org/wiki/Marie_Curie">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/issac.jpg" alt="Isaac Newton">
+            <div class="card-content">
+                <h2>Isaac Newton</h2>
+                <p>Formulated the laws of motion and universal gravitation.</p>
+                <a href="https://en.wikipedia.org/wiki/Isaac_Newton">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/nikola.jpg" alt="Nikola Tesla">
+            <div class="card-content">
+                <h2>Nikola Tesla</h2>
+                <p>Invented AC electricity systems and explored wireless technology.</p>
+                <a href="https://en.wikipedia.org/wiki/Nikola_Tesla">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/gallio.jpg" alt="Galileo Galilei">
+            <div class="card-content">
+                <h2>Galileo Galilei</h2>
+                <p>Improved the telescope and supported the heliocentric model.</p>
+                <a href="https://en.wikipedia.org/wiki/Galileo_Galilei">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/thomas.jpg" alt="Thomas Edison">
+            <div class="card-content">
+                <h2>Thomas Edison</h2>
+                <p>Invented the phonograph and improved the electric light bulb.</p>
+                <a href="https://en.wikipedia.org/wiki/Thomas_Edison">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/alex gham bel.jpg" alt="Alexander Graham Bell">
+            <div class="card-content">
+                <h2>Alexander Graham Bell</h2>
+                <p>Invented the telephone and worked on advancements in communication.</p>
+                <a href="https://en.wikipedia.org/wiki/Alexander_Graham_Bell">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/satya.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Satyendra Nath Bose</h2>
+                <p>Proposed the theory of evolution through natural selection.</p>
+                <a href="https://en.wikipedia.org/wiki/Satyendra_Nath_Bose">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/luios.jpg" alt="Louis Pasteur">
+            <div class="card-content">
+                <h2>Louis Pasteur</h2>
+                <p>Proposed the theory of  Pasteurization process .</p>
+                <a href="https://en.wikipedia.org/wiki/Louis_Pasteur">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/alex fleming.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Alexande Fleming</h2>
+                <p>Proposed the theory of Penicillin .</p>
+                <a href="https://en.wikipedia.org/wiki/Alexander_Fleming">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/michel.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Michael Faraday</h2>
+                <p>Proposed the theory of Electromagnetic induction.</p>
+                <a href="https://en.wikipedia.org/wiki/Michael_Faraday">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/subhra.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Subrahmanyan Chandrasekhar</h2>
+                <p>Proposed the theory of Stellar evolution research.</p>
+                <a href="https://en.wikipedia.org/wiki/Subrahmanyan_Chandrasekhar">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/subhra.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>James Clerk Maxwell:</h2>
+                <p>Proposed the theory of Electromagnetic theory .</p>
+                <a href="https://en.wikipedia.org/wiki/James_Clerk_Maxwell">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/edward jenner.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Edward Jenner</h2>
+                <p>Invented the concet of  Smallpox vaccine .</p>
+                <a href="https://en.wikipedia.org/wiki/Edward_Jenner">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/watson.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Watson & Crick</h2>
+                <p>Proposed the theory of DNA structure.</p>
+                <a href="https://en.wikipedia.org/wiki/Francis_Crick">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/rosanlind.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Rosalind Franklin</h2>
+                <p>Proposed the theory of  Contribution to DNA structure.</p>
+                <a href="https://en.wikipedia.org/wiki/Rosalind_Franklin">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/nicolas.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Nicolaus Copernicus</h2>
+                <p>Proposed the theory of Heliocentric model of the solar system.</p>
+                <a href="https://en.wikipedia.org/wiki/Nicolaus_Copernicus">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/joseph.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Joseph Lister</h2>
+                <p>Proposed the theory of Antiseptic surgery.</p>
+                <a href="https://en.wikipedia.org/wiki/Joseph_Lister">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/robert koch.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Robert Koch</h2>
+                <p>Proposed the theory of  Identification of bacteria causing diseases  .</p>
+                <a href="https://en.wikipedia.org/wiki/Robert_Koch">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/john.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>John Dalton</h2>
+                <p>Propressed the theory of Atomic theory </p>
+                <a href="https://en.wikipedia.org/wiki/John_Dalton">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/willhem.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Wilhelm Röntgen</h2>
+                <p>Propos the concept of X-rays </p>
+                <a href="https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgened">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/dmiriti.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Dmitri Mendeleev</h2>
+                <p>Proposed the theory  Periodic table of elements .</p>
+                <a href="https://en.wikipedia.org/wiki/Dmitri_Mendeleev">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/cv.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>C.V. Raman</h2>
+                <p>Proposed the theory of Raman effect.</p>
+                <a href="https://en.wikipedia.org/wiki/C._V._Raman">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="invention image/jagdish.jpg" alt="Charles Darwin">
+            <div class="card-content">
+                <h2>Jagdish Chandra Bose</h2>
+                <p>Proposed the theory of Crescograph</p>
+                <a href="https://en.wikipedia.org/wiki/Jagadish_Chandra_Bose">Learn More</a>
+            </div>
+        </div>
+        <!-- Add more scientists in the same format below -->
+        <!-- Copy the structure and replace the name, description, and image for each scientist -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Fahim Mahmood ALi | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
